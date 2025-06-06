@@ -19,12 +19,7 @@ int main()
     cout << "Введите символ: ";
     cin >> symbol;
 
-    if (amount < 0) {
-        cout << "ERROR" << endl;
-        return 0;
-    }
-
-    if (symbol != '*' && symbol != '-') {
+    if (symbol != '*' && symbol != '-' || amount < 0) {
         cout << "ERROR" << endl;
         return 0;
     }
